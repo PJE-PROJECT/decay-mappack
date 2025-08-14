@@ -1,0 +1,1 @@
+scoreboard players set indicators_setup timer 100

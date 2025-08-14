@@ -1,0 +1,16 @@
+[
+    {
+        "function": "minecraft:copy_custom_data",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "mp5"
+        },
+        "ops": [
+            {
+                "source": "value",
+                "target": "\"minecraft:custom_model_data\"",
+                "op": "replace"
+            }
+        ]
+    }
+]

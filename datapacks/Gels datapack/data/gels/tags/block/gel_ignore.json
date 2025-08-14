@@ -1,0 +1,12 @@
+{
+    "values": [
+        "minecraft:air",
+        "minecraft:void_air",
+        "minecraft:cave_air",
+        "minecraft:iron_trapdoor",
+        "minecraft:iron_bars",
+        "minecraft:barrier",
+        "minecraft:lime_stained_glass",
+        "minecraft:light"
+    ]
+}

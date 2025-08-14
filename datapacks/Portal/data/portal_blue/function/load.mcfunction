@@ -1,0 +1,1 @@
+scoreboard objectives add tf_rc_blue dummy

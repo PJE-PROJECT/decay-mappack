@@ -1,0 +1,10 @@
+execute if score sbpg:tick_20 timer matches 1 run function portal:lods/off/1
+execute if score sbpg:tick_20 timer matches 3 run function portal:lods/off/2
+execute if score sbpg:tick_20 timer matches 5 run function portal:lods/off/3
+execute if score sbpg:tick_20 timer matches 7 run function portal:lods/off/4
+execute if score sbpg:tick_20 timer matches 9 run function portal:lods/off/5
+execute if score sbpg:tick_20 timer matches 11 run function portal:lods/off/6
+execute if score sbpg:tick_20 timer matches 13 run function portal:lods/off/7
+execute if score sbpg:tick_20 timer matches 15 run function portal:lods/off/8
+execute if score sbpg:tick_20 timer matches 17 run function portal:lods/off/9
+execute if score sbpg:tick_20 timer matches 19 run function portal:lods/off/10

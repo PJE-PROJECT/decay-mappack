@@ -1,0 +1,1 @@
+execute as @a[limit=1] run function portal:death_anim/start

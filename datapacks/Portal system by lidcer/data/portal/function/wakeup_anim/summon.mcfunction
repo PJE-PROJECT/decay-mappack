@@ -1,0 +1,1 @@
+$execute align xyz run summon minecraft:armor_stand ~-0.0119506 ~-1.965502 ~0.16121 {Tags:["camera_anim"],Rotation:[$(rot)f,-69.4458f],NoGravity:1b}

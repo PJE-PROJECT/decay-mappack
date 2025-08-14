@@ -1,0 +1,1 @@
+give @s minecraft:item_frame[minecraft:entity_data={id:"minecraft:pig",Tags:["blue_gel"],Fixed:1b}]

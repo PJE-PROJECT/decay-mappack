@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"light.click\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "light:lmb"
+    }
+}

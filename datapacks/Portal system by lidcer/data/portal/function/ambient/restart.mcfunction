@@ -1,0 +1,43 @@
+scoreboard players set ambience_base ambient_global 0
+scoreboard players set amb_metal_groan_low_07 ambient_global 0
+scoreboard players set amb_industrial_muffled_lp_01 ambient_global 0
+scoreboard players set sp_a1_intro3_b1 ambient_global 0
+scoreboard players set sp_a1_intro5_b1 ambient_global 0
+scoreboard players set sp_a1_intro6 ambient_global 0
+scoreboard players set sp_a2_trust_fling_r1 ambient_global 0
+scoreboard players set sp_a2_pit_flings ambient_global 0
+scoreboard players set sp_a3_01_b2 ambient_global 0
+scoreboard players set sp_a1_wakeup_b1 ambient_global 0
+scoreboard players set sp_a1_wakeup_b2 ambient_global 0
+scoreboard players set mp_coop_lobby_2_c5 ambient_global 0
+scoreboard players set sp_a4_tb_catch_b1a ambient_global 0
+scoreboard players set sp_intro_01_06_chambertop ambient_global 0
+scoreboard players set sp_intro_01_08_chamberexit ambient_global 0
+scoreboard players set decay ambient_global 0
+scoreboard players set sp_intro_02_lb1-1 ambient_global 0
+scoreboard players set sp_intro_02_lx1-1 ambient_global 0
+scoreboard players set sp_intro_02_lx2-1 ambient_global 0
+scoreboard players set sp_intro_02_lx3-1 ambient_global 0
+scoreboard players set sp_a4_intro_b0 ambient_global 0
+scoreboard players set sp_a4_intro_b2 ambient_global 0
+scoreboard players set sp_a4_intro_b3 ambient_global 0
+scoreboard players set tag_discovery_01 ambient_global 0
+scoreboard players set sp_a1_cube_fling_intro_ch2_a0 ambient_global 0
+scoreboard players set sp_a1_cube_fling_intro_ch1_a0 ambient_global 0
+scoreboard players set sp_a2_paints_ch2_a1 ambient_global 0
+scoreboard players set sp_a2_fling_intro_a0 ambient_global 0
+scoreboard players set sp_a3_vactube_lumber_a0 ambient_global 0
+scoreboard players set amb_destroyed_elevator_lp_02 ambient_global 0
+
+
+scoreboard players set sp_a3_faith_plate ambient_global 0
+scoreboard players set sp_a3_concepts ambient_global 0
+scoreboard players set sp_a3_transition ambient_global 0
+scoreboard players set sp_a3_paint_fling ambient_global 0
+scoreboard players set doublevision ambient_global 0
+
+scoreboard players set amb_birds ambient_global 0
+scoreboard players set player_enter_tbeam_lp_01_looped ambient_global 0
+scoreboard players set amb_crow ambient_global 0
+scoreboard players set amb_waterdrips ambient_global 0
+scoreboard players set amb_insects_lp ambient_global 0

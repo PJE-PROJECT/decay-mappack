@@ -1,0 +1,2 @@
+execute at @e[tag=al] run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":190,},count:1},Tags:["ambient.sound.icon"],teleport_duration:1,brightness:{sky:15,block:15}}
+function help:ambient_l

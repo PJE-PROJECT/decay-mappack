@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=v_portalgun,tag=picked] run item replace entity @s container.0 with minecraft:potion[minecraft:custom_model_data=15,minecraft:potion_contents={custom_color:0}]
+execute as @e[type=minecraft:item_display,tag=v_portalgun,tag=picked] run tag @s remove picked

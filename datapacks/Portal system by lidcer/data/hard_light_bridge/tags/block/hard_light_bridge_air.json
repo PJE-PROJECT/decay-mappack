@@ -1,0 +1,12 @@
+{
+"values":[
+	"minecraft:air",
+	"minecraft:light",
+	"minecraft:barrier",
+	"minecraft:cave_air",
+	"minecraft:void_air",
+	"minecraft:iron_trapdoor",
+	"minecraft:dark_oak_slab",
+	"minecraft:snow"
+	]
+}

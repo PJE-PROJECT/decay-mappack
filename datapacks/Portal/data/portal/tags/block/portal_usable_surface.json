@@ -1,0 +1,22 @@
+{
+    "values":[
+    "minecraft:white_concrete",
+	"minecraft:smooth_quartz",
+    "minecraft:cobblestone",
+    "minecraft:stone_bricks",
+    "minecraft:cracked_stone_bricks",
+    "minecraft:calcite",
+    "minecraft:white_glazed_terracotta",
+    "minecraft:mossy_stone_bricks",
+    "minecraft:yellow_glazed_terracotta",
+    "minecraft:lime_glazed_terracotta",
+    "minecraft:pink_glazed_terracotta",
+    "minecraft:gray_glazed_terracotta",
+    "minecraft:diorite",
+    "minecraft:oak_planks",
+    "minecraft:deepslate",
+    "minecraft:cobbled_deepslate",
+    "minecraft:cherry_log",
+    "minecraft:stripped_cherry_log"
+    ]
+}

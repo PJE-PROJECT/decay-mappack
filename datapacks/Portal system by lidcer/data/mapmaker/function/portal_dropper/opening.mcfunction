@@ -1,0 +1,1 @@
+#Chestno sam ne znayu nahuya sozdal etu funciyu

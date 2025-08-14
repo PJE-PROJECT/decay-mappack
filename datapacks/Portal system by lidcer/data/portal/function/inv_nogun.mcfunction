@@ -1,0 +1,7 @@
+execute if score elevator_arrival time matches 0 if score elevator_departure time matches 0 if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["itempicker"]}}}}] as @a[tag=!menu.pause,tag=!blackscreen,tag=!kill_anim,tag=!killed,tag=!goo_killed,tag=!itempicker_activated,limit=1,nbt={OnGround:1b}] at @s run function portal:pause
+kill @e[type=minecraft:item]
+execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["itempicker"]}}}}] run tag @s add gun_drop
+execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["itempicker"]}}}}] run clear @s minecraft:carrot_on_a_stick
+execute if entity @s[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["itempicker"]}}}}] run item replace entity @s weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:custom_model_data=3,minecraft:custom_name='""',minecraft:unbreakable={},minecraft:custom_data={Tags:["itempicker"]}]
+execute if entity @s[tag=gun_drop,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["itempicker"]}}}}] run tag @s[tag=gun_drop] remove gun_drop
+item replace entity @s armor.head with minecraft:red_stained_glass[minecraft:custom_model_data=6,minecraft:custom_name='""',minecraft:enchantments={levels:{"minecraft:binding_curse":1}},minecraft:unbreakable={}]

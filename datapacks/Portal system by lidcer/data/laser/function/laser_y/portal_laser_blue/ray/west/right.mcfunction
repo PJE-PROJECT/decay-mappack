@@ -1,0 +1,3 @@
+$execute at @e[type=minecraft:area_effect_cloud,tag=sbpg.portal_second,tag=ceiling] positioned ^-0.25 ^-1.5 ^-1.5 rotated ~90 $(x) run function laser:laser/portal/raycast
+$execute at @e[type=minecraft:area_effect_cloud,tag=sbpg.portal_second,tag=floor,tag=!south,tag=!east] positioned ^0.25 ^-0.5 ^1.5 rotated ~90 $(x) run function laser:laser/portal/raycast
+$execute at @e[type=minecraft:area_effect_cloud,tag=sbpg.portal_second,tag=floor,tag=!north,tag=!west] positioned ^0.25 ^-1 ^1.5 rotated ~90 $(x) run function laser:laser/portal/raycast

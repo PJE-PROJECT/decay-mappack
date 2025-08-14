@@ -1,0 +1,3 @@
+execute if entity @e[type=minecraft:item_frame,distance=..0.8,tag=orange_gel,tag=D,limit=1] if entity @s[tag=!gel_stand_orange] run playsound minecraft:player_enter_speed_paint ambient @a ~ ~ ~ 0.1 1 0
+execute if entity @e[type=minecraft:item_frame,distance=..0.8,tag=orange_gel,tag=D,limit=1] if entity @s[tag=!gel_stand_orange] run tag @s add gel_stand_orange
+execute if entity @s[tag=gel_stand_orange] run attribute @s minecraft:generic.movement_speed base set 0.3

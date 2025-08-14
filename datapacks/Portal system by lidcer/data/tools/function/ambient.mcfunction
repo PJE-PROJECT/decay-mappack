@@ -1,0 +1,1 @@
+function help:ambient_g

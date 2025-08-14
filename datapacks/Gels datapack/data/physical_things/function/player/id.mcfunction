@@ -1,0 +1,1 @@
+execute unless score @s physical_things.player_id = @s physical_things.player_id store result score @s physical_things.player_id run scoreboard players add #physical_things.player_id physical_things.player_id 1

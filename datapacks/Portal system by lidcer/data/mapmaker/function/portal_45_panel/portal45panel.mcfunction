@@ -1,0 +1,49 @@
+clear @a[gamemode=creative,tag=45_panel_setup,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["exit_tool"]}}}]}]
+
+tellraw @a[gamemode=creative,tag=45_panel_setup,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["exit_tool"]}}}]}] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"]
+
+
+give @a[gamemode=creative,tag=45_panel_setup,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_c1"]}}}]}] minecraft:carrot_on_a_stick[minecraft:custom_model_data=2,minecraft:custom_name='"Portal 45 Degrees White Panel - Clean Style 1"',minecraft:unbreakable={show_in_tooltip:0b},minecraft:hide_additional_tooltip={},minecraft:custom_data={Tags:["portal45panel_tool_c1"]}] 1
+give @a[gamemode=creative,tag=45_panel_setup,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_c2"]}}}]}] minecraft:carrot_on_a_stick[minecraft:custom_model_data=2,minecraft:custom_name='"Portal 45 Degrees White Panel - Clean Style 2"',minecraft:unbreakable={show_in_tooltip:0b},minecraft:hide_additional_tooltip={},minecraft:custom_data={Tags:["portal45panel_tool_c2"]}] 1
+give @a[gamemode=creative,tag=45_panel_setup,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_r1"]}}}]}] minecraft:carrot_on_a_stick[minecraft:custom_model_data=2,minecraft:custom_name='"Portal 45 Degrees White Panel - Rusted Style 1"',minecraft:unbreakable={show_in_tooltip:0b},minecraft:hide_additional_tooltip={},minecraft:custom_data={Tags:["portal45panel_tool_r1"]}] 1
+give @a[gamemode=creative,tag=45_panel_setup,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_r2"]}}}]}] minecraft:carrot_on_a_stick[minecraft:custom_model_data=2,minecraft:custom_name='"Portal 45 Degrees White Panel - Rusted Style 2"',minecraft:unbreakable={show_in_tooltip:0b},minecraft:hide_additional_tooltip={},minecraft:custom_data={Tags:["portal45panel_tool_r2"]}] 1
+give @a[gamemode=creative,tag=45_panel_setup,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["exit_tool"]}}}]}] minecraft:carrot_on_a_stick[minecraft:custom_model_data=1,minecraft:custom_name='{"color":"black","text":"Aperture Science Universal Editor - Exit"}',minecraft:lore=['"Exit Editor"'],minecraft:unbreakable={show_in_tooltip:0b},minecraft:hide_additional_tooltip={},minecraft:custom_data={Tags:["exit_tool","menu1"]}] 1
+
+
+execute as @a[tag=45_panel_setup,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_c1"]}}}}] at @s unless entity @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel,tag=45panel_setup_c1] run summon minecraft:armor_stand ^ ^ ^ {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":24,"minecraft:unbreakable":{}},count:1}],DisabledSlots:2037535,Tags:["45panel_setup","useless","45_panel","45panel_setup_c1"]}
+execute as @a[tag=45_panel_setup,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_c2"]}}}}] at @s unless entity @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel,tag=45panel_setup_c2] run summon minecraft:armor_stand ^ ^ ^ {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":25,"minecraft:unbreakable":{}},count:1}],DisabledSlots:2037535,Tags:["45panel_setup","useless","45_panel","45panel_setup_c2"]}
+execute as @a[tag=45_panel_setup,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_r1"]}}}}] at @s unless entity @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel,tag=45panel_setup_r1] run summon minecraft:armor_stand ^ ^ ^ {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":26,"minecraft:unbreakable":{}},count:1}],DisabledSlots:2037535,Tags:["45panel_setup","useless","45_panel","45panel_setup_r1"]}
+execute as @a[tag=45_panel_setup,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_r2"]}}}}] at @s unless entity @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel,tag=45panel_setup_r2] run summon minecraft:armor_stand ^ ^ ^ {Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,ArmorItems:[{},{},{},{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":27,"minecraft:unbreakable":{}},count:1}],DisabledSlots:2037535,Tags:["45panel_setup","useless","45_panel","45panel_setup_r2"]}
+
+execute as @a[tag=45_panel_setup,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_c1"]}}}}] if entity @e[tag=45panel_setup,tag=45_panel,tag=!45panel_setup_c1] run kill @e[tag=45panel_setup,tag=45_panel,tag=!45panel_setup_c1]
+execute as @a[tag=45_panel_setup,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_c2"]}}}}] if entity @e[tag=45panel_setup,tag=45_panel,tag=!45panel_setup_c2] run kill @e[tag=45panel_setup,tag=45_panel,tag=!45panel_setup_c2]
+execute as @a[tag=45_panel_setup,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_r1"]}}}}] if entity @e[tag=45panel_setup,tag=45_panel,tag=!45panel_setup_r1] run kill @e[tag=45panel_setup,tag=45_panel,tag=!45panel_setup_r1]
+execute as @a[tag=45_panel_setup,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_r2"]}}}}] if entity @e[tag=45panel_setup,tag=45_panel,tag=!45panel_setup_r2] run kill @e[tag=45panel_setup,tag=45_panel,tag=!45panel_setup_r2]
+
+
+
+
+execute as @a[tag=45_panel_setup] at @s align xyz run tp @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel,sort=nearest,limit=1] @p
+
+execute as @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel] at @s at @p[tag=45_panel_setup] run tp @s ^1 ^1 ^2 0 0
+execute as @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel] at @s if entity @p[tag=N,tag=45_panel_setup] align xyz run tp @s ~1 ~-1.5 ~0.5 0 0
+execute as @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel] at @s if entity @p[tag=S,tag=45_panel_setup] align xyz run tp @s ~1 ~-1.5 ~0.5 -180 0
+execute as @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel] at @s if entity @p[tag=W,tag=45_panel_setup] align xyz run tp @s ~0.5 ~-1.5 ~ -90 0
+execute as @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel] at @s if entity @p[tag=E,tag=45_panel_setup] align xyz run tp @s ~0.5 ~-1.5 ~1 90 0
+
+#execute as @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel] at @s if entity @p[tag=N,tag=45_panel_setup] run data modify entity @s Pose.Head[0] set from entity @s Rotation[0]
+#execute as @e[type=minecraft:armor_stand,tag=45panel_setup,tag=45_panel] at @s if entity @p[tag=N,tag=45_panel_setup] run data modify entity @s Pose.Head[1] set from entity @s Rotation[1]
+
+execute as @a[tag=45_panel_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_c1"]}}}}] run tag @e[tag=45panel_setup,tag=45_panel] add 45_panel_set
+execute as @a[tag=45_panel_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_c2"]}}}}] run tag @e[tag=45panel_setup,tag=45_panel] add 45_panel_set
+execute as @a[tag=45_panel_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_r1"]}}}}] run tag @e[tag=45panel_setup,tag=45_panel] add 45_panel_set
+execute as @a[tag=45_panel_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_r2"]}}}}] run tag @e[tag=45panel_setup,tag=45_panel] add 45_panel_set
+
+execute as @a[tag=45_panel_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_c1"]}}}}] at @s run playsound minecraft:item.trident.return ambient @s ~ ~ ~ 1 2
+execute as @a[tag=45_panel_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_c2"]}}}}] at @s run playsound minecraft:item.trident.return ambient @s ~ ~ ~ 1 2
+execute as @a[tag=45_panel_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_r1"]}}}}] at @s run playsound minecraft:item.trident.return ambient @s ~ ~ ~ 1 2
+execute as @a[tag=45_panel_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["portal45panel_tool_r2"]}}}}] at @s run playsound minecraft:item.trident.return ambient @s ~ ~ ~ 1 2
+
+tag @e[type=minecraft:armor_stand,tag=45_panel_set] remove useless
+tag @e[type=minecraft:armor_stand,tag=45_panel_set] remove 45panel_setup
+tag @e[type=minecraft:armor_stand,tag=45_panel_set] remove 45_panel_set

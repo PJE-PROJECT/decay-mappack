@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:shulker,tag=Shiftsh] run tp 0 0 0

@@ -1,0 +1,8 @@
+execute unless entity @e[type=minecraft:armor_stand,tag=button_pedestal_base,tag=hinted,tag=!activated,limit=1] run tag @e[type=minecraft:armor_stand,distance=..5,tag=button_pedestal_base,tag=!activated,tag=!hinted,sort=nearest,limit=1] add hinted
+execute unless entity @e[type=minecraft:text_display,tag=hint,tag=button,limit=1] if entity @e[type=minecraft:armor_stand,tag=button_pedestal_base,tag=hinted,limit=1] run playsound minecraft:beepclear ambient @a ~ ~ ~ 0.7 1 0.7
+execute unless entity @e[type=minecraft:text_display,tag=hint,tag=button,limit=1] if entity @e[type=minecraft:armor_stand,tag=button_pedestal_base,tag=hinted,limit=1] run summon minecraft:text_display ~ ~2 ~ {background:0,text:'"\\uE010\\uE011"',Tags:["hint","button"],teleport_duration:5b,brightness:{sky:15,block:15},billboard:"center"}
+execute positioned as @e[type=minecraft:armor_stand,tag=button_pedestal_base,tag=hinted,limit=1] rotated as @a[limit=1] run tp @e[type=minecraft:text_display,tag=hint,tag=button,limit=1] ~ ~1.2 ~
+execute if entity @e[type=minecraft:armor_stand,tag=button_pedestal_base,tag=hinted,tag=activated,limit=1] if score button hints matches 254 run scoreboard players set button hints 253
+execute if score button hints matches 33..253 run scoreboard players remove button hints 30
+execute store result entity @e[type=minecraft:text_display,tag=hint,tag=button,limit=1] text_opacity int 1 run scoreboard players get button hints
+execute if score button hints matches 13 run function portal:hints/reset/button

@@ -1,0 +1,22 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+            {
+                "nbt": "temp[0]",
+                "storage": "midwut:main",
+                "interpret": true,
+                "source": "storage",
+                "type": "nbt"
+            },
+            {
+                "nbt": "temp[1]",
+                "storage": "midwut:main",
+                "interpret": true,
+                "source": "storage",
+                "type": "nbt"
+            }
+        ]
+    }
+]

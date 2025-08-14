@@ -1,0 +1,9 @@
+{
+    "values":[
+        "minecraft:air",
+        "minecraft:light",
+        "minecraft:cave_air",
+        "minecraft:void_air",
+        "minecraft:snow"
+        ]
+    }

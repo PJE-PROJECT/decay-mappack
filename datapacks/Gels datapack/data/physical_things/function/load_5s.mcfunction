@@ -1,0 +1,1 @@
+execute if entity @e[type=minecraft:marker,tag=physical_things.entity,limit=1] run schedule function physical_things:tick_entities 1t replace

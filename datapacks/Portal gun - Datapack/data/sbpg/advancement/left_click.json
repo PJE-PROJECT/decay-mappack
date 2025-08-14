@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"sbpg.click_detector\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sbpg:gun/left_click"
+    }
+}

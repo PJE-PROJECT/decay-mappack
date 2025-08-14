@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:item_display,tag=laser_catcher,tag=rusted,tag=active,nbt={ArmorItems:[{},{},{},{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":9}}]}] run item replace entity @s armor.head with minecraft:netherite_shovel[minecraft:custom_model_data=10]

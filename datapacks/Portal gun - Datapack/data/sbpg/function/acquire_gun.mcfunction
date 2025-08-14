@@ -1,0 +1,1 @@
+function sbpg:debug/give_gun/regular

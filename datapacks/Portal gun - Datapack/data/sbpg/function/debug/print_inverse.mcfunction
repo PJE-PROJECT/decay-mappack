@@ -1,0 +1,3 @@
+tellraw @a ["",{"score":{"name":"@s","objective":"sbpg.inverse_aa"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.inverse_ab"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.inverse_ac"},"type":"score"}]
+tellraw @a ["",{"score":{"name":"@s","objective":"sbpg.inverse_ba"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.inverse_bb"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.inverse_bc"},"type":"score"}]
+tellraw @a ["",{"score":{"name":"@s","objective":"sbpg.inverse_ca"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.inverse_cb"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.inverse_cc"},"type":"score"}]

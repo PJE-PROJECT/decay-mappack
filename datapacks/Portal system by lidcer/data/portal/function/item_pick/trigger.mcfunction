@@ -1,0 +1,31 @@
+item replace entity @s weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:custom_model_data=21,minecraft:custom_name='""',minecraft:unbreakable={},minecraft:custom_data={Tags:["itempicker"],mp5:1,mp6:1}]
+item replace entity @s weapon.offhand with minecraft:leather_helmet[minecraft:custom_model_data=15,minecraft:custom_name='""',minecraft:dyed_color={rgb:8388641},minecraft:custom_data={portalgunmodel:1b}]
+
+
+
+
+
+execute unless entity @e[tag=hovering,limit=1] positioned ^ ^0.5 ^1 unless entity @e[distance=..1.5,tag=prop,tag=!fizzled,tag=!hovering,tag=!hoverignore] unless entity @e[type=minecraft:armor_stand,distance=..1,tag=button_pedestal_base,tag=!useless] run playsound minecraft:object_use_failure ambient @s ~ ~ ~ 1 1 1
+execute unless entity @e[tag=hovering,limit=1] positioned ^ ^0.5 ^1 unless entity @e[distance=..1.5,tag=prop,tag=!fizzled,tag=!hovering,tag=!hoverignore] unless entity @e[type=minecraft:armor_stand,distance=..1,tag=button_pedestal_base,tag=!useless] run function portalgun_anims:portalgundryfire
+
+execute unless entity @e[tag=hovering,limit=1] positioned ^ ^0.5 ^1 if entity @e[type=minecraft:armor_stand,distance=..1,tag=button_pedestal_base,tag=!useless] run tag @e[type=minecraft:armor_stand,distance=..1,tag=button_pedestal_base,tag=!useless,tag=!activated,limit=1] add activated
+
+
+
+
+execute unless entity @e[tag=hovering,limit=1] positioned ^ ^0.5 ^1 unless entity @e[type=minecraft:item_display,distance=..1,tag=meg_field] positioned ^ ^ ^ if entity @e[distance=..1.5,tag=prop,tag=!fizzled,tag=!hovering,tag=!hoverignore,limit=1] if block ~ ~ ~ #portal:hoverignore positioned ^ ^0.5 ^ if block ~ ~ ~ #portal:hoverignore positioned ^ ^ ^-1 if block ~ ~ ~ #portal:hoverignore positioned ^ ^ ^2 if block ~ ~ ~ #portal:hoverignore positioned ^ ^-0.5 ^-1 positioned ~ ~0.5 ~ unless block ~ ~ ~ #portal:hoverignore_thick_blocks positioned ^ ^ ^0.5 unless block ~ ~ ~ #portal:hoverignore_thick_blocks positioned ^ ^-0.5 ^0.5 positioned ~ ~-0.5 ~ unless entity @e[type=minecraft:armor_stand,distance=..1,tag=button_pedestal_base,tag=!useless,tag=!activated] run tag @s add itempicker_activated
+execute unless entity @e[tag=hovering,limit=1] positioned ^ ^0.5 ^1 unless entity @e[type=minecraft:item_display,distance=..1,tag=meg_field] positioned ^ ^ ^ if entity @e[distance=..1.5,tag=prop,tag=!fizzled,tag=!hovering,tag=!hoverignore,limit=1] if block ~ ~ ~ #portal:hoverignore positioned ^ ^0.5 ^ if block ~ ~ ~ #portal:hoverignore positioned ^ ^ ^-1 if block ~ ~ ~ #portal:hoverignore positioned ^ ^ ^2 if block ~ ~ ~ #portal:hoverignore positioned ^ ^-0.5 ^-1 positioned ~ ~0.5 ~ unless block ~ ~ ~ #portal:hoverignore_thick_blocks positioned ^ ^ ^0.5 unless block ~ ~ ~ #portal:hoverignore_thick_blocks positioned ^ ^-0.5 ^0.5 positioned ~ ~-0.5 ~ unless entity @e[type=minecraft:armor_stand,distance=..1,tag=button_pedestal_base,tag=!useless,tag=!activated] run playsound minecraft:object_use_lp ambient @a ~ ~ ~ 0.5 1 0.5
+execute unless entity @e[tag=hovering,limit=1] positioned ^ ^0.5 ^1 unless entity @e[type=minecraft:item_display,distance=..1,tag=meg_field] positioned ^ ^ ^ if entity @e[distance=..1.5,tag=prop,tag=!fizzled,tag=!hovering,tag=!hoverignore,limit=1] if block ~ ~ ~ #portal:hoverignore positioned ^ ^0.5 ^ if block ~ ~ ~ #portal:hoverignore positioned ^ ^ ^-1 if block ~ ~ ~ #portal:hoverignore positioned ^ ^ ^2 if block ~ ~ ~ #portal:hoverignore positioned ^ ^-0.5 ^-1 positioned ~ ~0.5 ~ unless block ~ ~ ~ #portal:hoverignore_thick_blocks positioned ^ ^ ^0.5 unless block ~ ~ ~ #portal:hoverignore_thick_blocks positioned ^ ^-0.5 ^0.5 positioned ~ ~-0.5 ~ unless entity @e[type=minecraft:armor_stand,distance=..1,tag=button_pedestal_base,tag=!useless,tag=!activated] run item replace entity @s weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:custom_model_data=21,minecraft:custom_name='""',minecraft:unbreakable={},minecraft:custom_data={Tags:["itempicker"]}]
+execute unless entity @e[tag=hovering,limit=1] positioned ^ ^0.5 ^1 unless entity @e[type=minecraft:item_display,distance=..1,tag=meg_field] positioned ^ ^ ^ if entity @e[distance=..1.5,tag=prop,tag=!fizzled,tag=!hovering,tag=!hoverignore,limit=1] if block ~ ~ ~ #portal:hoverignore positioned ^ ^0.5 ^ if block ~ ~ ~ #portal:hoverignore positioned ^ ^ ^-1 if block ~ ~ ~ #portal:hoverignore positioned ^ ^ ^2 if block ~ ~ ~ #portal:hoverignore positioned ^ ^-0.5 ^-1 positioned ~ ~0.5 ~ unless block ~ ~ ~ #portal:hoverignore_thick_blocks positioned ^ ^ ^0.5 unless block ~ ~ ~ #portal:hoverignore_thick_blocks positioned ^ ^-0.5 ^0.5 positioned ~ ~-0.5 ~ unless entity @e[type=minecraft:armor_stand,distance=..1,tag=button_pedestal_base,tag=!useless,tag=!activated] run tag @e[distance=..1.5,tag=prop,tag=!fizzled,tag=!hovering,tag=!hoverignore,limit=1] add hovering
+execute unless entity @e[tag=hovering,limit=1] positioned ^ ^0.5 ^1 unless entity @e[type=minecraft:item_display,distance=..1,tag=meg_field] positioned ^ ^ ^ if entity @e[distance=..1.5,tag=prop,tag=!fizzled,tag=!hovering,tag=!hoverignore,limit=1] if block ~ ~ ~ #portal:hoverignore positioned ^ ^0.5 ^ if block ~ ~ ~ #portal:hoverignore positioned ^ ^ ^-1 if block ~ ~ ~ #portal:hoverignore positioned ^ ^ ^2 if block ~ ~ ~ #portal:hoverignore positioned ^ ^-0.5 ^-1 positioned ~ ~0.5 ~ unless block ~ ~ ~ #portal:hoverignore_thick_blocks positioned ^ ^ ^0.5 unless block ~ ~ ~ #portal:hoverignore_thick_blocks positioned ^ ^-0.5 ^0.5 positioned ~ ~-0.5 ~ unless entity @e[type=minecraft:armor_stand,distance=..1,tag=button_pedestal_base,tag=!useless,tag=!activated] if entity @e[distance=..1.5,tag=prop,tag=hovering] run say 1
+
+
+tag @e[tag=prop,tag=hovering,limit=1] add hovering_motion
+
+execute positioned as @e[tag=prop,tag=cube,tag=hovering,limit=1] run playsound minecraft:physics_cube_impact_soft ambient @a ~ ~ ~ 0.7 1 0.7
+
+execute if entity @e[tag=prop,tag=hovering,limit=1] run function portalgun_anims:portalgunpick
+#execute if entity @e[tag=prop,tag=hovering,limit=1] run kill @e[type=minecraft:item_display,tag=laser]
+#execute if entity @e[tag=prop,tag=hovering,limit=1] run kill @e[type=minecraft:marker,tag=laser_end]
+execute if entity @e[tag=prop,tag=hovering,limit=1] run tag @e[tag=portal_raycaster] remove portal_raycaster
+execute if entity @e[tag=prop,tag=hovering,limit=1] run tag @e[tag=laser_cube] remove active

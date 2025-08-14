@@ -1,0 +1,3 @@
+tellraw @a ["",{"score":{"name":"@s","objective":"sbpg.matrix_aa"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.matrix_ab"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.matrix_ac"},"type":"score"}]
+tellraw @a ["",{"score":{"name":"@s","objective":"sbpg.matrix_ba"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.matrix_bb"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.matrix_bc"},"type":"score"}]
+tellraw @a ["",{"score":{"name":"@s","objective":"sbpg.matrix_ca"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.matrix_cb"},"type":"score"}," ",{"score":{"name":"@s","objective":"sbpg.matrix_cc"},"type":"score"}]

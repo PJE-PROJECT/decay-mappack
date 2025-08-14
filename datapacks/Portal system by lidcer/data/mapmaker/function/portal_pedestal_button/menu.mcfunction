@@ -1,0 +1,9 @@
+
+execute if score button timer matches ..1 run scoreboard players set button timer 1
+tellraw @s[gamemode=creative] ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"]
+tellraw @s[gamemode=creative] {"text":"Pedestal Button Timer Editor","bold":true,"color":"gold","type":"text"}
+tellraw @s[gamemode=creative] {"text":"                                    ","color":"gray","type":"text"}
+tellraw @s[gamemode=creative] ["",{"text":"Timer (seconds)      ","color":"gray","type":"text"},{"text":" ","type":"text"},{"text":"\u25c0   ","clickEvent":{"action":"run_command","value":"/scoreboard players remove button timer 1"},"type":"text"},{"score":{"name":"button","objective":"timer"},"type":"score"},{"text":"   \u25b6","clickEvent":{"action":"run_command","value":"/scoreboard players add button timer 1"},"type":"text"}]
+tellraw @s[gamemode=creative] {"text":" ","type":"text"}
+tellraw @s[gamemode=creative] ["  ",{"text":"[Apply]","color":"green","clickEvent":{"action":"run_command","value":"/execute as @e[type=minecraft:armor_stand,tag=button_pedestal_base,tag=new,tag=!useless] run function mapmaker:portal_pedestal_button/apply"},"type":"text"},{"text":"   ","bold":true,"type":"text"},{"text":"[No Timer]","color":"red","clickEvent":{"action":"run_command","value":"/execute as @e[type=minecraft:armor_stand,tag=button_pedestal_base,tag=new,tag=!useless] run function mapmaker:portal_pedestal_button/remove"},"type":"text"}]
+tellraw @s[gamemode=creative] {"text":" ","type":"text"}

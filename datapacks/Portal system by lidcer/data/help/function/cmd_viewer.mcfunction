@@ -1,0 +1,1 @@
+tag @s add cmd_view

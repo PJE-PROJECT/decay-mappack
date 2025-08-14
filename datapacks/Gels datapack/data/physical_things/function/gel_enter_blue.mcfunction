@@ -1,0 +1,2 @@
+execute if entity @e[type=minecraft:item_frame,distance=..0.8,tag=blue_gel,tag=D,limit=1] if entity @s[tag=!gel_stand_blue] run playsound minecraft:player_enter_jump_paint_01 ambient @a ~ ~ ~ 0.3 1 0
+execute if entity @e[type=minecraft:item_frame,distance=..0.8,tag=blue_gel,tag=D,limit=1] if entity @s[tag=!gel_stand_blue] run tag @s add gel_stand_blue

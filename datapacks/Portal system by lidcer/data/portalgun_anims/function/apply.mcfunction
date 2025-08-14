@@ -1,0 +1,2 @@
+$item modify entity @a[limit=1] weapon.offhand {"function":"minecraft:set_components","components":{"minecraft:custom_model_data":$(cmd)}}
+$item modify entity @a[limit=1] weapon.offhand {"function":"minecraft:set_components","components":{"minecraft:dyed_color":{"rgb":$(color)}}}
