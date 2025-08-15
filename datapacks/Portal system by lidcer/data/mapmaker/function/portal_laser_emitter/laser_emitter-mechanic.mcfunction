@@ -1,5 +1,5 @@
-execute positioned ~ ~0.5 ~ if entity @e[type=minecraft:glow_item_frame,distance=..1.3,tag=indicator,tag=active,limit=1] run setblock ^ ^ ^-1 minecraft:redstone_block
-execute positioned ~ ~0.5 ~ unless entity @e[type=minecraft:glow_item_frame,distance=..1.3,tag=indicator,tag=active,limit=1] if entity @e[type=minecraft:glow_item_frame,distance=..1.3,tag=indicator,tag=!active,limit=1] run setblock ^ ^ ^-1 minecraft:granite
+execute positioned ~ ~0.5 ~ if entity @e[type=minecraft:glow_item_frame,distance=..1.3,tag=indicator,tag=active,limit=1] run setblock ^ ^-0.5 ^-1 minecraft:redstone_block
+execute positioned ~ ~0.5 ~ unless entity @e[type=minecraft:glow_item_frame,distance=..1.3,tag=indicator,tag=active,limit=1] if entity @e[type=minecraft:glow_item_frame,distance=..1.3,tag=indicator,tag=!active,limit=1] run setblock ^ ^-0.5 ^-1 minecraft:granite
 
 execute if block ^ ^-1 ^ minecraft:air run kill @s
 
