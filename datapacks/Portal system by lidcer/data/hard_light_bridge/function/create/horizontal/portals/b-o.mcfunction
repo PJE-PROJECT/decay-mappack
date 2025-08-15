@@ -6,7 +6,7 @@ execute positioned ^ ^2 ^ if entity @e[type=minecraft:glow_item_frame,distance=.
 
 #Y
 execute positioned ^ ^ ^ if entity @e[type=minecraft:glow_item_frame,distance=..0.7,tag=hard_light_bridge] as @e[type=minecraft:area_effect_cloud,tag=sbpg.portal_second,tag=floor,tag=south] at @s positioned ^ ^2 ^-1 run function hard_light_bridge:create/y/raycast
-execute positioned ^ ^ ^ if entity @e[type=minecraft:glow_item_frame,distance=..0.7,tag=hard_light_bridge] as @e[type=minecraft:area_effect_cloud,tag=sbpg.portal_second,tag=floor,tag=north] at @s positioned ^ ^1 ^-1 run function hard_light_bridge:create/y/raycast
+execute positioned ^ ^ ^ if entity @e[type=minecraft:glow_item_frame,distance=..0.7,tag=hard_light_bridge] as @e[type=minecraft:area_effect_cloud,tag=sbpg.portal_second,tag=floor,tag=north] at @s positioned ^ ^0.5 ^-1 run function hard_light_bridge:create/y/raycast
 execute positioned ^ ^ ^ if entity @e[type=minecraft:glow_item_frame,distance=..0.7,tag=hard_light_bridge] as @e[type=minecraft:area_effect_cloud,tag=sbpg.portal_second,tag=floor,tag=east] at @s positioned ^ ^2 ^-1 run function hard_light_bridge:create/y/raycast
 execute positioned ^ ^ ^ if entity @e[type=minecraft:glow_item_frame,distance=..0.7,tag=hard_light_bridge] as @e[type=minecraft:area_effect_cloud,tag=sbpg.portal_second,tag=floor,tag=west] at @s positioned ^ ^1 ^-1 run function hard_light_bridge:create/y/raycast
 
