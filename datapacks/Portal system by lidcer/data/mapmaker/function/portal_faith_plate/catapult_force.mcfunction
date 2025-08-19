@@ -7,9 +7,11 @@ execute as @e[type=!minecraft:player,distance=..1,tag=!hovering] at @s run tag @
 execute as @e[tag=Forced,nbt={OnGround:1b}] run data merge entity @s {Motion:[0.0d,0.0d,0.0d]}
 
 execute if entity @e[tag=SitPlate,tag=!kill,limit=1,nbt={OnGround:1b}] as @a[limit=1] at @s run tp @s ~ ~0.5 ~
+
 tag @e[tag=SitPlate,nbt={OnGround:1b}] add kill
 
-execute positioned as @e[tag=SitPlate] if entity @e[type=minecraft:item_display,distance=..2.5,tag=funnel,limit=1] run tag @e[tag=SitPlate,limit=1] add kill
+execute positioned as @e[tag=SitPlate] if entity @e[type=minecraft:item_display,distance=..1,tag=funnel,limit=1] run tag @e[tag=SitPlate,limit=1] add kill
+execute if entity @e[tag=SitPlate,tag=kill,limit=1] as @a[limit=1] at @s run tp @s ~ ~0.5 ~
 
 
 
