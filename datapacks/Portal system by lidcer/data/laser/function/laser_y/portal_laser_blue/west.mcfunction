@@ -10,10 +10,14 @@ execute if score laser.portal.rotation.ray buffer matches 90..180 run scoreboard
 
 
 
-
 scoreboard players set laser.portal.ceiling buffer 90
 scoreboard players operation laser.portal.ceiling buffer -= laser.portal.rotation.portal buffer
 execute if entity @e[type=minecraft:area_effect_cloud,tag=sbpg.portal_second,tag=floor,limit=1] run scoreboard players operation laser.portal.ceiling buffer *= #-1 const
+
+execute if entity @e[type=minecraft:area_effect_cloud,tag=sbpg.portal_second,tag=floor,limit=1] if score laser.portal.ceiling buffer matches 0 run scoreboard players set laser.portal.ceiling buffer -90
+execute if entity @e[type=minecraft:area_effect_cloud,tag=sbpg.portal_second,tag=ceiling,limit=1] if score laser.portal.ceiling buffer matches 0 run scoreboard players set laser.portal.ceiling buffer 90
+
+
 execute store result storage laser:ray x int 1 run scoreboard players get laser.portal.ceiling buffer
 execute if score laser.portal.rotation.ray buffer matches 0..90 run function laser:laser_y/portal_laser_blue/ray/south/left with storage laser:ray
-execute if score laser.portal.rotation.ray buffer matches 90..180 run function laser:laser_y/portal_laser_blue/ray/south/right with storage laser:ray
+execute if score laser.portal.rotation.ray buffer matches 91..180 run function laser:laser_y/portal_laser_blue/ray/south/right with storage laser:ray
