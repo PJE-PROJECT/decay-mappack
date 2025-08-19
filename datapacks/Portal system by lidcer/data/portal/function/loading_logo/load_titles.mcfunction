@@ -1,4 +1,4 @@
-execute unless score @s loadtitles = @s loadtitles run scoreboard players set @s loadtitles 0
+
 item replace entity @e[tag=shadowmap,limit=1] container.0 with minecraft:granite_slab
 scoreboard players add @s loadtitles 1
 stopsound @a[limit=1]
