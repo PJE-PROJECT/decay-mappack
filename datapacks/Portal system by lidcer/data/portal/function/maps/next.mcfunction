@@ -1,4 +1,3 @@
-#execute as @e[type=item_display,tag=playerstart,tag=!played] if score @s map = search map run tag @s add played
 
 execute as @e[type=minecraft:marker,tag=playerstartcoords,tag=!played] if score @s map = search map run tag @s add played
 
@@ -21,23 +20,13 @@ clear @a[limit=1]
 gamerule sendCommandFeedback false
 gamemode adventure @a[limit=1]
 gamerule sendCommandFeedback true
-#kill @e[tag=cube,tag=!hoverignore]
-#kill @e[tag=sbpg.portal]
-#kill @e[tag=pic]
-#kill @e[tag=laser]
-#kill @e[tag=laser_end]
-#tp @e[tag=collus] ~ ~-666 ~
-#tag @e[tag=custom_trigger,tag=activated] remove activated
 
 scoreboard players set update map 1
-#schedule function portal:maps/updatemap 20t
 
 
-#execute as @e[type=item_display,tag=playerstart,tag=played] at @s if score @s map = search map run tp @a[limit=1] ~ ~-1 ~ ~ ~
 execute as @e[type=minecraft:marker,tag=mapamb] at @s if score @s map = search map run function portal:maps/ambient
 function portal:ambient/restart
-#function hard_light_bridge:delete
-#function mapmaker:portal_pgun/activate_all
+
 kill @e[type=minecraft:item_display,tag=title]
 
 scoreboard players operation current map = search map

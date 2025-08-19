@@ -11,6 +11,11 @@ kill @e[tag=loading_logo_p]
 kill @e[tag=loading_logo_stand]
 tag @s remove loading_logo
 tag @s remove loading_logo_load
+
+tag @s remove titlesfade
+tag @s remove load_titles
+kill @e[tag=title]
+
 scoreboard players set @s timer 0
 stopsound @s
 scoreboard players set menumusic timer 0

@@ -1,6 +1,6 @@
+
 item replace entity @e[tag=funnel] container.0 with air
 scoreboard players set lightresume map 1
-
 
 summon minecraft:item_display ~ ~ ~ {Tags:["shadowmap_stopframe"],item:{id:"minecraft:red_stained_glass",components:{"minecraft:custom_model_data":9},Count:1b}}
 
@@ -14,5 +14,14 @@ tag @e[type=minecraft:item_display,nbt={item:{id:"minecraft:white_terracotta"}}]
 item replace entity @e[type=item_display,tag=white.fakesky.display] container.0 with air
 
 execute if entity @e[type=item_display,tag=shadowmap,limit=1] run schedule function portal:light/resume_newmap/begin 3t
-
 execute unless entity @e[type=item_display,tag=shadowmap,limit=1] run schedule function portal:light/resume_newmap/finish1 3t
+
+
+#execute if entity @e[type=item_display,tag=playerstart,tag=map.has.light,limit=1] unless entity @e[type=item_display,tag=shadowmap,limit=1] run schedule function portal:light/resume_newmap/resume_light 1t
+
+
+
+#execute if entity @e[type=item_display,tag=playerstart,tag=map.has.light,limit=1] if entity @e[type=item_display,tag=shadowmap,limit=1] run schedule function portal:light/resume_newmap/begin 3t
+#execute if entity @e[type=item_display,tag=playerstart,tag=!map.has.light,limit=1] run schedule function portal:light/resume_newmap/finish1 3t
+
+

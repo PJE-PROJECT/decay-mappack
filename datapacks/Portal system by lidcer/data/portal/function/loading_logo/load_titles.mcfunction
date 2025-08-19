@@ -1,8 +1,10 @@
+execute unless score @s loadtitles = @s loadtitles run scoreboard players set @s loadtitles 0
+item replace entity @e[tag=shadowmap,limit=1] container.0 with minecraft:granite_slab
 scoreboard players add @s loadtitles 1
 stopsound @a[limit=1]
 clear @a[limit=1]
 effect clear @a[limit=1]
-tp @s 0 50 0
+#tp @s ~ ~ ~
 gamemode spectator @s
 spectate @e[type=minecraft:armor_stand,tag=loading_logo_stand,limit=1] @s
 execute unless entity @e[type=minecraft:item_display,tag=loading_logo_p,limit=1] run summon minecraft:item_display ~ ~ ~ {Tags:["loading_logo_p","markerignore"],item:{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":77,"minecraft:unbreakable":{}},count:1},item_display:"head",brightness:{sky:15,block:15}}

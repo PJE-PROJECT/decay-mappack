@@ -13,6 +13,12 @@ gamemode spectator @a
 tag @e[type=minecraft:item_display,nbt={item:{id:"minecraft:white_terracotta"}}] add white.fakesky.display
 item replace entity @e[type=item_display,tag=white.fakesky.display] container.0 with air
 
-execute if entity @e[type=item_display,tag=shadowmap,limit=1] run schedule function portal:light/resume/begin 3t
 
+execute if entity @e[type=item_display,tag=shadowmap,limit=1] run schedule function portal:light/resume/begin 3t
 execute unless entity @e[type=item_display,tag=shadowmap,limit=1] run schedule function portal:light/resume/finish1 3t
+
+#execute if entity @e[type=item_display,tag=playerstart,tag=map.has.light,limit=1] unless entity @e[type=item_display,tag=shadowmap,limit=1] run schedule function portal:light/resume/resume_light 1t
+
+
+#execute if entity @e[type=item_display,tag=playerstart,tag=map.has.light,limit=1] if entity @e[type=item_display,tag=shadowmap,limit=1] run schedule function portal:light/resume/begin 3t
+#execute if entity @e[type=item_display,tag=playerstart,tag=!map.has.light,limit=1] run schedule function portal:light/resume/finish1 3t

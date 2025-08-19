@@ -7,6 +7,11 @@ tp @a[tag=test_subject] @e[type=minecraft:marker,tag=savedplayercoords,limit=1]
 kill @e[type=minecraft:armor_stand,tag=cube,tag=!hoverignore]
 kill @e[type=minecraft:armor_stand,tag=radio,tag=prop,tag=!hoverignore]
 kill @e[type=minecraft:armor_stand,tag=portalcamera_unmount,tag=prop]
+
+kill @e[tag=loading_logo_stand]
+kill @e[tag=loading_logo_p]
+
+
 kill @e[tag=sbpg.portal]
 kill @e[tag=pic]
 kill @e[tag=laser]

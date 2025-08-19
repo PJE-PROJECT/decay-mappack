@@ -6,8 +6,8 @@ kill @e[tag=saved_camera_unmount_pos]
 kill @e[tag=saved_gel_pos]
 
 #PLAYER
-kill @e[type=minecraft:marker,tag=loadcoords,limit=1]
-execute positioned 0 50 0 run summon minecraft:marker ~ ~ ~ {Tags:["loadcoords"]}
+#kill @e[type=minecraft:marker,tag=loadcoords,limit=1]
+execute positioned 0 50 0 unless entity @e[tag=loadcoords,limit=1] run summon minecraft:marker ~ ~ ~ {Tags:["loadcoords"]}
 execute store result entity @e[type=minecraft:marker,tag=loadcoords,limit=1] data.x int 1 run data get entity @a[tag=test_subject,limit=1] Pos[0]
 execute store result entity @e[type=minecraft:marker,tag=loadcoords,limit=1] data.y int 1 run data get entity @a[tag=test_subject,limit=1] Pos[1]
 execute store result entity @e[type=minecraft:marker,tag=loadcoords,limit=1] data.z int 1 run data get entity @a[tag=test_subject,limit=1] Pos[2]

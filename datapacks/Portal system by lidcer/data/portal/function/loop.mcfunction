@@ -77,14 +77,22 @@ execute if entity @e[type=minecraft:armor_stand,tag=watersplash,limit=1] run fun
 
 execute positioned as @a[tag=test_subject,tag=!goo_killed] if block ~ ~0.5 ~ #portal:water run function portal:goo_player
 execute as @a[tag=test_subject,tag=goo_killed] positioned as @s run function portal:goo_player
-scoreboard players set @a[tag=test_subject,tag=!goo_killed,tag=!death_anim,tag=!loading_logo] time 0
+scoreboard players set @a[tag=test_subject,tag=!goo_killed,tag=!death_anim,tag=!loading_logo_end,tag=!loading_logo_load] time 0
 
 
 #Loading
 
-execute as @a[tag=load_titles,limit=1] positioned 0 50 0 run function portal:loading_logo/load_titles
-execute as @a[tag=test_subject,tag=loading_logo_load,limit=1] positioned 0 50 0 run function portal:loading_logo/loading
-execute as @a[tag=test_subject,tag=loading_logo_end,limit=1] positioned 0 50 0 run function portal:loading_logo/loading
+execute as @a[tag=load_titles,limit=1,scores={loadtitles=0}] run function portal:loading_logo/pos/titles/pos
+execute as @a[tag=load_titles,limit=1,scores={loadtitles=1..}] at @s positioned as @e[tag=playerstart,distance=..10] run function portal:loading_logo/load_titles
+
+
+execute as @a[tag=test_subject,tag=loading_logo_load,limit=1,tag=!loading_logo,scores={time=0}] run function portal:loading_logo/pos/load/pos
+execute as @a[tag=test_subject,tag=loading_logo_load,limit=1,scores={time=1..}] positioned as @e[tag=savedplayercoords] run function portal:loading_logo/loading
+
+
+execute as @a[tag=test_subject,tag=loading_logo_end,limit=1,tag=!loading_logo,scores={time=0}] run function portal:loading_logo/pos/newgame/pos
+execute as @a[tag=test_subject,tag=loading_logo_end,limit=1,scores={time=1..}] at @s positioned as @e[tag=playerstart,distance=..10] run function portal:loading_logo/loading
+
 
 
 #Portalgun anims
@@ -170,9 +178,9 @@ execute at @a[scores={crouch=60..}] run function portal:player_sounds/crouch
 execute at @a[scores={jump=1..}] run function portal:player_sounds/jump
 
 #Mapmaker
-execute at @a[tag=test_subject,limit=1] unless entity @e[type=minecraft:item_display,distance=..5,tag=elevator] run function mapmaker:mapmaker
+execute at @a[tag=test_subject,tag=!loading_logo,tag=!load_titles,limit=1] unless entity @e[type=minecraft:item_display,distance=..5,tag=elevator] run function mapmaker:mapmaker
 execute at @a[tag=!test_subject,limit=1] run function mapmaker:mapmaker
-execute at @a[tag=test_subject,limit=1] as @e[type=minecraft:item_display,distance=..2,tag=v_portalgun,tag=!picked] positioned as @s run function mapmaker:portal_pgun/pgun-mechanic
+execute at @a[tag=test_subject,tag=!loading_logo,tag=!load_titles,limit=1] as @e[type=minecraft:item_display,distance=..2,tag=v_portalgun,tag=!picked] positioned as @s run function mapmaker:portal_pgun/pgun-mechanic
 
 
 scoreboard players reset @a[scores={portalgun=1..}] portalgun

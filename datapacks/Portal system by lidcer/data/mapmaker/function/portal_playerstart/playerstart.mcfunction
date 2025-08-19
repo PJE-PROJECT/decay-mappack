@@ -83,7 +83,7 @@ execute if entity @a[tag=playerstart_setup,scores={portalgun=1..},nbt={SelectedI
 execute if entity @a[tag=playerstart_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["start_tool"]}}}}] store result entity @e[type=minecraft:marker,tag=playerstartcoords,tag=new,limit=1] data.z int 1 run data get entity @e[type=minecraft:item_display,tag=playerstart_setup,tag=useless,limit=1] Pos[2]
 execute if entity @a[tag=playerstart_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["start_tool"]}}}}] store result entity @e[type=minecraft:marker,tag=playerstartcoords,tag=new,limit=1] data.rot int 1 run data get entity @e[type=minecraft:item_display,tag=playerstart_setup,tag=useless,limit=1] Rotation[0]
 
-
+execute if entity @a[tag=playerstart_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["start_tool"]}}}}] if entity @e[tag=shadowmap,limit=1] run tag @e[type=minecraft:item_display,tag=playerstart_setup,tag=useless,limit=1] add map.has.light
 
 
 execute if entity @a[tag=playerstart_setup,scores={portalgun=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["start_tool"]}}}}] run tag @e[type=minecraft:marker,tag=playerstartcoords,tag=new] remove new

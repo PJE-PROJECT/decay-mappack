@@ -4,7 +4,8 @@ scoreboard players set lightresume map 0
 execute if entity @e[type=item_display,tag=playerstart,tag=wakeup_anim,distance=..2] run function portal:wakeup_anim/start
 
 tag @e[type=minecraft:armor_stand,tag=button_pedestal_base,tag=activated] remove activated
-
+kill @e[tag=loading_logo_stand]
+kill @e[tag=loading_logo_p]
 
 kill @e[tag=cube,tag=!hoverignore]
 kill @e[type=minecraft:armor_stand,tag=radio,tag=prop,tag=!hoverignore]

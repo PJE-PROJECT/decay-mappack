@@ -5,4 +5,4 @@ scoreboard players set elevator_arrival time 1
 playsound minecraft:elevator_arrive_01 ambient @a ~ ~ ~ 0.6 1 0.6
 effect give @s minecraft:slow_falling infinite 0 true
 attribute @s minecraft:generic.jump_strength base set -1
-fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 minecraft:air replace minecraft:barrier
+fill ~1 ~-1 ~1 ~-1 ~-2 ~-1 minecraft:air replace minecraft:barrier
