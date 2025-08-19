@@ -1,3 +1,4 @@
+execute unless score motion_blur config = motion_blur config run scoreboard players set motion_blur config 0
 effect give @s mining_fatigue infinite 255 true
 effect give @s minecraft:haste infinite 127 true
 effect give @s minecraft:invisibility infinite 1 true
