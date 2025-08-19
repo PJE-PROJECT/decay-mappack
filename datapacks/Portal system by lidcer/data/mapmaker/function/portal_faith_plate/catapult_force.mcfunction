@@ -1,6 +1,8 @@
 execute if entity @e[type=minecraft:item_display,distance=..1,tag=plate_model,tag=cooldown] as @e[type=minecraft:player,distance=..1] at @s unless entity @e[distance=..5,tag=SitPlate] if entity @s run summon minecraft:turtle ~ ~ ~ {Tags:["SitPlate","Forced"],Health:100b,Silent:1b,Age:-12000,active_effects:[{show_particles:0b,duration:-1,id:"minecraft:invisibility",amplifier:1b}]}
 
-execute as @e[type=minecraft:item_display,distance=..0.1,tag=plate_model,tag=!cooldown] if entity @e[distance=..1,tag=!faith_plate,tag=!hovering,limit=1] run function mapmaker:portal_faith_plate/anim
+execute as @e[type=minecraft:item_display,distance=..0.1,tag=plate_model,tag=!cooldown] unless entity @a[distance=..1,limit=1] if entity @e[type=!player,distance=..1,tag=prop,tag=!hovering,limit=1] run function mapmaker:portal_faith_plate/anim
+execute as @e[type=minecraft:item_display,distance=..0.1,tag=plate_model,tag=!cooldown] if entity @a[distance=..1,limit=1] unless entity @e[type=!player,distance=..1,tag=prop,tag=!hovering,limit=1] run function mapmaker:portal_faith_plate/anim
+
 
 ride @a[limit=1] mount @e[tag=SitPlate,tag=!kill,limit=1]
 execute as @e[type=!minecraft:player,distance=..1,tag=!hovering] at @s run tag @s add Forced

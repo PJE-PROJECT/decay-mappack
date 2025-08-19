@@ -178,9 +178,9 @@ execute at @a[scores={crouch=60..}] run function portal:player_sounds/crouch
 execute at @a[scores={jump=1..}] run function portal:player_sounds/jump
 
 #Mapmaker
-execute at @a[tag=test_subject,tag=!loading_logo,tag=!load_titles,limit=1] unless entity @e[type=minecraft:item_display,distance=..5,tag=elevator] run function mapmaker:mapmaker
+execute at @a[tag=test_subject,tag=!loading_logo_end,tag=!loading_logo_load,tag=!load_titles,limit=1] unless entity @e[type=minecraft:item_display,distance=..5,tag=elevator] run function mapmaker:mapmaker
 execute at @a[tag=!test_subject,limit=1] run function mapmaker:mapmaker
-execute at @a[tag=test_subject,tag=!loading_logo,tag=!load_titles,limit=1] as @e[type=minecraft:item_display,distance=..2,tag=v_portalgun,tag=!picked] positioned as @s run function mapmaker:portal_pgun/pgun-mechanic
+execute at @a[tag=test_subject,tag=!loading_logo_end,tag=!loading_logo_load,tag=!load_titles,limit=1] as @e[type=minecraft:item_display,distance=..2,tag=v_portalgun,tag=!picked] positioned as @s run function mapmaker:portal_pgun/pgun-mechanic
 
 
 scoreboard players reset @a[scores={portalgun=1..}] portalgun

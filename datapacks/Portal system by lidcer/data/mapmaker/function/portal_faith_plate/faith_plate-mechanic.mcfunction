@@ -1,5 +1,7 @@
 
-execute if entity @e[type=!minecraft:item_display,distance=..1,tag=!faith_plate,tag=!hovering,limit=1] run function mapmaker:portal_faith_plate/catapult_force
+execute if entity @e[type=!player,distance=..1,tag=prop,tag=!hovering,limit=1] run function mapmaker:portal_faith_plate/catapult_force
+execute if entity @a[distance=..1,limit=1] run function mapmaker:portal_faith_plate/catapult_force
+
 execute if entity @e[tag=SitPlate,limit=1] run function mapmaker:portal_faith_plate/catapult_force
 
 scoreboard players add @e[type=minecraft:item_display,tag=plate_model,tag=plate_anim] animationtime 1
