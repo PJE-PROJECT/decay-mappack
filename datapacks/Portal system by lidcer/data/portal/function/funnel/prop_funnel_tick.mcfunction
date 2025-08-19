@@ -1,3 +1,7 @@
+
+tag @s[tag=laser_cube,tag=active] remove active
+
+
 ## Y
 execute if entity @e[type=minecraft:item_display,distance=..1.9,tag=funnel_h,limit=1] if entity @e[type=minecraft:item_display,distance=..1.9,tag=funnel_y,limit=1] run data modify entity @s Motion[1] set value 0.0d
 execute if entity @e[type=minecraft:item_display,distance=..1.9,tag=funnel_h,limit=1] unless entity @e[type=minecraft:item_display,distance=..1.9,tag=funnel_y,limit=1] run function portal:funnel/slide/y
