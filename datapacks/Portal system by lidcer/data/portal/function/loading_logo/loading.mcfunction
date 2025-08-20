@@ -15,7 +15,7 @@ execute unless entity @e[type=minecraft:armor_stand,tag=loading_logo_stand,limit
 #effect give @s minecraft:night_vision 1 255 true
 execute if entity @s[scores={time=1}] run function portal:ambient/disable
 
-execute if entity @s[scores={time=1}] run item replace entity @e[tag=elevator_main,tag=arrival,distance=..10] container.0 with air
+execute if entity @s[scores={time=1..}] run item replace entity @e[tag=elevator_main,tag=arrival,distance=..10] container.0 with air
 
 
 

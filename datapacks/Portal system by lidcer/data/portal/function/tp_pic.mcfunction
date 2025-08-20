@@ -1,6 +1,6 @@
 gamemode adventure @a
 execute at @e[type=minecraft:marker,tag=player_pos_pic,limit=1] run tp @a[tag=test_subject,limit=1] ~ ~ ~ ~ ~
-kill @e[type=minecraft:marker,tag=player_pos_pic,limit=1]
+kill @e[type=minecraft:marker,tag=player_pos_pic]
 bossbar set portal_proj players @s[type=item]
 tag @a remove b_pic
 kill @e[tag=b_pic_trigger]

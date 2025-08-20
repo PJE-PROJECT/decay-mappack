@@ -16,6 +16,7 @@ kill @e[tag=laser]
 kill @e[tag=laser_end]
 kill @e[tag=gel]
 kill @e[tag=ambient.sound.icon]
+kill @e[tag=player_pos_pic]
 
 ##CUBES
 execute positioned as @e[type=item_display,tag=cube_spawn] run summon armor_stand ~ ~ ~ {Tags:["cube","prop"],Invisible:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,DisabledSlots:2037535,Small:1b}
