@@ -14,7 +14,7 @@ give @a[gamemode=creative,tag=laser_emitter_r_setup,nbt=!{Inventory:[{id:"minecr
 
 
 execute as @a[tag=laser_emitter_c_setup,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["laser_emitter_c_tool_1"]}}}}] at @s unless entity @e[tag=laser_emitter_setup_c] run summon item_display ~ ~ ~ {item:{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":1},count:1},Tags:["laser_emitter","laser_emitter_new","laser_emitter_setup_c","laser_emitter_setup_c_1","useless"],teleport_duration:1}
-execute as @a[tag=laser_emitter_r_setup,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["laser_emitter_r_tool_1"]}}}}] at @s unless entity @e[tag=laser_emitter_setup_r] run summon item_display ~ ~ ~ {item:{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":1},count:1},Tags:["laser_emitter","laser_emitter_new","laser_emitter_setup_r","laser_emitter_setup_r_1","useless"],teleport_duration:1}
+execute as @a[tag=laser_emitter_r_setup,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["laser_emitter_r_tool_1"]}}}}] at @s unless entity @e[tag=laser_emitter_setup_r] run summon item_display ~ ~ ~ {item:{id:"minecraft:netherite_shovel",components:{"minecraft:custom_model_data":2},count:1},Tags:["laser_emitter","laser_emitter_new","laser_emitter_setup_r","laser_emitter_setup_r_1","useless"],teleport_duration:1}
 
 
 execute as @e[type=minecraft:item_display,tag=laser_emitter_setup_c] at @p[tag=laser_emitter_c_setup] run tp @s @p[tag=laser_emitter_c_setup]
