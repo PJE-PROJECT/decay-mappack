@@ -16,3 +16,5 @@ tag @a remove portable
 tag @a add o_pic
 
 
+# Nothing lasts forever
+# Even cold november rain

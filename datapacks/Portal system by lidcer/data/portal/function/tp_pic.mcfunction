@@ -9,3 +9,4 @@ kill @e[tag=o_pic_trigger]
 tag @a add portable
 scoreboard players set pic timer 0
 item replace entity @e[tag=ghost] container.0 with minecraft:leather_boots[minecraft:damage=3,minecraft:unbreakable={}]
+item replace entity @e[tag=motion_blur] container.0 with minecraft:red_stained_glass[minecraft:custom_model_data=11]

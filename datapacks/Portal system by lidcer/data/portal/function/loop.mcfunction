@@ -23,8 +23,8 @@ execute as @e[tag=prop,tag=hovering,tag=hovering_motion] run function portal:tic
 execute as @e[tag=ambient.sound.icon] at @s facing entity @p eyes run tp @s ~ ~ ~ ~ ~90
 
 # MOTION BLUR
-execute positioned as @a[limit=1] if score motion_blur config matches 1 unless entity @e[tag=motion_blur,limit=1] run summon minecraft:item_display ~ ~ ~ {Tags:["motion_blur"],item:{id:"minecraft:red_stained_glass",components:{"minecraft:custom_model_data":11},Count:1b}}
-execute positioned as @a[limit=1] if score motion_blur config matches 1 if entity @e[tag=motion_blur,limit=1] run tp @e[tag=motion_blur] ~ ~ ~
+execute positioned as @a[tag=!b_pic,tag=!o_pic,limit=1] if score motion_blur config matches 1 unless entity @e[tag=motion_blur,limit=1] run summon minecraft:item_display ~ ~ ~ {Tags:["motion_blur"],item:{id:"minecraft:red_stained_glass",components:{"minecraft:custom_model_data":11},Count:1b}}
+execute positioned as @a[tag=!b_pic,tag=!o_pic,limit=1] if score motion_blur config matches 1 if entity @e[tag=motion_blur,limit=1] run tp @e[tag=motion_blur] ~ ~ ~
 
 
 

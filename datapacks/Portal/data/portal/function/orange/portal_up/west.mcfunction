@@ -31,6 +31,6 @@ execute if score loading workspace matches 0 if score pics config matches 1 run 
 tag @e[type=minecraft:armor_stand,tag=pic_new] add o_pic
 item replace entity @e[type=minecraft:armor_stand,tag=pic_new,tag=o_pic] armor.head with minecraft:red_stained_glass[minecraft:custom_model_data=4]
 tag @e[type=minecraft:armor_stand,tag=pic_new] remove pic_new
-
+kill @e[tag=motion_blur]
 function excursion_funnel:update
 
