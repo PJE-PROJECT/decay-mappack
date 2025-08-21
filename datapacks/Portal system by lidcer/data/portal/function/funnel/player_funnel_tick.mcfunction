@@ -1,4 +1,8 @@
 
+
+
+
+
 execute as @a[tag=in_funnel,scores={funnel_enter_delay=0}] store result score @s f_motion_x run data get entity @s Motion[0] 160000
 execute as @a[tag=in_funnel,scores={funnel_enter_delay=0}] store result score @s f_motion_z run data get entity @s Motion[2] 160000
 
@@ -20,6 +24,18 @@ execute if entity @e[type=minecraft:item_display,distance=..1.9,tag=funnel_h,lim
 execute if entity @e[type=minecraft:item_display,distance=..1.9,tag=funnel_y,limit=1,tag=U] if block ~ ~2 ~ #excursion_funnel:excursion_funnel_air run data modify entity @s Motion[1] set value 0.08d
 execute if entity @e[type=minecraft:item_display,distance=..1.9,tag=funnel_y,limit=1,tag=D] run data modify entity @s Motion[1] set value -0.08d
 execute if entity @e[type=minecraft:item_display,distance=..1.9,tag=funnel_y,limit=1] unless entity @e[type=minecraft:item_display,distance=..1.9,tag=funnel_h,limit=1] run function portal:funnel/slide/vertical
+
+
+
+#Anti-block
+execute unless block ~ ~ ~ #excursion_funnel:excursion_funnel_air if block ~0.1 ~ ~ #excursion_funnel:excursion_funnel_air run data modify entity @s Motion[0] set value 0.5d
+execute unless block ~ ~ ~ #excursion_funnel:excursion_funnel_air if block ~-0.1 ~ ~ #excursion_funnel:excursion_funnel_air run data modify entity @s Motion[0] set value -0.5d
+
+
+execute unless block ~ ~ ~ #excursion_funnel:excursion_funnel_air if block ~ ~ ~0.1 #excursion_funnel:excursion_funnel_air run data modify entity @s Motion[2] set value 0.5d
+execute unless block ~ ~ ~ #excursion_funnel:excursion_funnel_air if block ~ ~ ~-0.1 #excursion_funnel:excursion_funnel_air run data modify entity @s Motion[2] set value -0.5d
+
+execute positioned ~ ~0.8 ~ unless block ~ ~ ~ #excursion_funnel:excursion_funnel_air if block ~ ~-0.1 ~ #excursion_funnel:excursion_funnel_air run data modify entity @s Motion[1] set value -0.5d
 
 
 
