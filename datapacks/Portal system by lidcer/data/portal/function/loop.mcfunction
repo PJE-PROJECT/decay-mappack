@@ -222,7 +222,7 @@ execute at @a[gamemode=!spectator,limit=1] if entity @e[distance=..1.4,tag=funne
 execute as @a[tag=in_funnel,scores={funnel_enter_delay=0},limit=1] at @s unless entity @e[distance=..1.6,tag=funnel] run function portal:funnel/funnel_exit
 
 execute as @e[tag=portable] if score @s funnel_portals_delay matches 1.. run scoreboard players add @s funnel_portals_delay 1
-execute as @e[tag=portable] if score @s funnel_portals_delay matches 5.. run scoreboard players set @s funnel_portals_delay 0
+execute as @e[tag=portable] if score @s funnel_portals_delay matches 20.. run scoreboard players set @s funnel_portals_delay 0
 
 
 #Zloyebuchiy lift
